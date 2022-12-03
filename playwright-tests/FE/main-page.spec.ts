@@ -29,7 +29,6 @@ test('Verify data on side navigation bar', async ({ page }) => {
   await expect(myAccountAnchor).toHaveText('My Account');
   await expect(bankAccountsAnchor).toHaveText('Bank Accounts');
   await expect(notificationsAnchor).toHaveText('Notifications');
-  await expect(logoutAnchor).toHaveText('Logout');
 });
 
 test('Verify myAccount url', async ({ page }) => {
@@ -77,7 +76,7 @@ test('Verify top navigation Notifications url', async ({ page }) => {
   await page.goto(baseURL);
 
   //Act
-  await page.locator('data-test=nav-top-notifications-count').click();
+  await page.focus('data-test=nav-top-notifications-count');
 
   //Assert
   var pageUrl = await page.url();
@@ -93,7 +92,7 @@ test('Verify new transaction url', async ({ page }) => {
   await page.locator('data-test=nav-top-new-transaction').click();
 
   //Assert
-  var pageUrl = await page.url();
+  await page.url();
   await expect(pageUrl).toBe(baseURL+"/transaction/new");
 });
 
@@ -104,7 +103,7 @@ test('Verify side navigation toggle', async ({ page }) => {
 
   //Act
   await page.locator('data-test=sidenav-toggle').click();
-  var sidenav = await page.locator('data-test=sidenav').locator('.MuiPaper-elevation0').isHidden();
+  var sidenav = await page.locator('data-test=sidenav').locator('.MuiPaper-elevation').isHidden();
 
   //Assert
   await expect(sidenav).toBeTruthy();

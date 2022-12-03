@@ -27,11 +27,11 @@ test('Verify on bank accounts list new added item', async ({ page }) => {
   await page.locator('data-test=bankaccount-submit').click();
 
   //Assert  
-  await expect(page.locator('text=Mbank').isVisible).toBeTruthy();  
+  await expect(page.locator('text=Mbank')).toBeTruthy();  
 });
 
 test('Delete create bank account', async ({ page }) => {
-  //Arrange
+  //Arange
   await page.locator('data-test=sidenav-bankaccounts').click();
   await page.locator('data-test=bankaccount-new').click();
 

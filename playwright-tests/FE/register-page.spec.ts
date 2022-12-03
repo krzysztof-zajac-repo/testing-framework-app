@@ -21,10 +21,7 @@ test('Register new user with correct data', async ({ page }) => {
     await page.locator('#lastName').fill(secondName); 
     await page.locator('#username').fill(username);
     await page.locator('#password').fill(password);
-    await page.locator('#confirmPassword').fill(password);
     await page.locator('data-test=signup-submit').click();
-    
-    //Act
     await page.locator('#username').fill(username);
     await page.locator('#password').fill(password);
     await page.locator('data-test=signin-submit').click();
@@ -41,7 +38,7 @@ test('Check password length validation', async ({ page }) => {
    await page.locator('#firstName').fill(firstName);
    await page.locator('#lastName').fill(secondName); 
    await page.locator('#username').fill(username);
-   await page.locator('#password').fill(tooShortPassword);
+   await page.locator('#password').fill("999");
 
    //Assert
    await expect(await page.locator('#password-helper-text')).toHaveText("Password must contain at least 4 characters");

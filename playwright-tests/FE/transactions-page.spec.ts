@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
   await page.locator('data-test=nav-top-new-transaction').click();
 });
 
-test('New transaction - choose profile by search bar', async ({ page }) => {
+testt('New transaction - choose profile by search bar', async ({ page }) => {
   //Arrange
   var existingProfile = "Ibrahim Dickens";
   var searchBar = page.locator('#user-list-search-input');
@@ -28,7 +28,7 @@ test('New transaction - choose profile by search bar', async ({ page }) => {
   await expect(page.locator('text=Paid $200.00 for testing note')).toBeTruthy();  
 });
 
-test('New transaction - choose visible profile', async ({ page }) => {
+test('New transaction - choose visible profile' async ({ page }) => {
   
   //Arrange
   var userList = page.locator('data-test=users-list');

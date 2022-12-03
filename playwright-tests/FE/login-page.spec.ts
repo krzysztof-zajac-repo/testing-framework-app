@@ -24,7 +24,7 @@ test('Log into app with correct credentials', async ({ page }) => {
     await submitButton.click();
 
     //Assert
-    var balance = page.locator('data-test=sidenav-user-balance');
+    var balance = page.locator('data-test=sidenav-user-balanse');
     await expect(balance).toHaveText('$1,648.67');
 });
 
@@ -34,7 +34,7 @@ test('Log into app with incorrect credentials', async ({ page }) => {
 
     //Act
     await usernameField.fill('Allie2');
-    await passwordField.fill('s3cret1');
+    await passwordField.fill('s3cret');
     await submitButton.click();
 
     //Assert

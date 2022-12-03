@@ -1,46 +1,14 @@
 <p align="center">
-  <img alt="Cypress Real World App Logo" src="./src/svgs/rwa-logo.svg" />
+Application based on The Cypress Real-World App created to verify testing skills.
 </p>
 
 <p align="center">
-  <a href="https://cypress.io">
-    <img width="140" alt="Cypress Logo" src="./src/svgs/built-by-cypress.svg" />
-    </a>
-</p>
-
-<p align="center">
-   <a href="https://dashboard.cypress.io/projects/7s5okt/runs">
-    <img src="https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/7s5okt/develop&style=flat&logo=cypress" />
-  </a>
-
-  <a href="https://codecov.io/gh/cypress-io/cypress-realworld-app">
-    <img src="https://codecov.io/gh/cypress-io/cypress-realworld-app/branch/develop/graph/badge.svg" />
-  </a>
-
-  <a href="https://percy.io/cypress-io/cypress-realworld-app">
-    <img src="https://percy.io/static/images/percy-badge.svg" />
-  </a>
-  
-   <a href="#contributors-">
-    <img src="https://img.shields.io/badge/all_contributors-6-green.svg?style=flat" />
-  </a>
-</p>
-
-<p align="center">
-A payment application to demonstrate <strong>real-world</strong> usage of <a href="https://cypress.io">Cypress</a> testing methods, patterns, and workflows.
+There are hidden 20 bugs in playwright automated test. To find and describe bugs you have one hour. Good luck!
 </p>
 
 <p align="center">
   <img style='width: 70%' alt="Cypress Real World App" src="./public/img/rwa-readme-screenshot.png" />
 </p>
-
-> 💬 **Note from maintainers**
->
-> This application is purely for demonstration and educational purposes. Its setup and configuration resemble typical real-world applications, but it's not a full-fledged production system. Use this app to learn, experiment, tinker, and practice application testing with Cypress.
->
-> Happy Testing!
-
----
 
 ## Features
 
